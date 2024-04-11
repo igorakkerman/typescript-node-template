@@ -1,2 +1,1 @@
-console.log("Hey everywhere!")
-
+console.log('Hey, everywhere!')

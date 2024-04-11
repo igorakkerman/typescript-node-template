@@ -1,19 +1,28 @@
 {
-  "name": "playwright-lab",
-  "version": "1.0.0",
-  "main": "dist/main.js",
-  "scripts": {
-    "dev": "tsc --watch",
-    "start": "node --watch dist/main.js",
-    "lint": "eslint . --ext .ts",
-    "build": "tsc --build",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.20",
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
-    "@typescript-eslint/parser": "^7.1.0",
-    "eslint": "^8.57.0",
-    "typescript": "^5.3.3"
-  }
+    "name": "myproject",
+    "version": "0.1.0",
+    "type": "module",
+    "main": "dist/main.js",
+    "scripts": {
+        "build": "tsc --build",
+        "build:clean": "pnpm clean && pnpm build",
+        "build:tidy": "pnpm format && pnpm lint && pnpm build",
+        "dev": "tsc --watch",
+        "start": "node --watch dist/main.js",
+        "lint": "tsc -noemit && eslint .",
+        "format": "editorconfig . && prettier --write .",
+        "clean": "rimraf dist",
+        "clean:node": "pnpm clean && rimraf node_modules"
+    },
+    "devDependencies": {
+        "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+        "@types/node": "^20.12.7",
+        "editorconfig": "^2.0.0",
+        "eslint": "^9.0.0",
+        "eslint-config-prettier": "^9.1.0",
+        "prettier": "^3.2.5",
+        "rimraf": "^5.0.5",
+        "typescript": "^5.4.5",
+        "typescript-eslint": "^7.6.0"
+    }
 }
