@@ -19,3 +19,14 @@ overrides:
           # trivago/prettier-plugin-sort-imports (using regex)
           importOrder:
               - .+
+    # expect all *.json files to be jsonc
+    - files: '*.json'
+      options:
+          parser: jsonc
+    # except for package.json
+    - files: 'package.json'
+      options:
+          parser: json
+    - files: '*.yaml'
+      options:
+          parser: yaml
