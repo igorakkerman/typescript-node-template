@@ -4,42 +4,36 @@
     // tolerate trailing comma in all jsonc files with .json extension
     "json.schemas": [
         {
-            "fileMatch": [
-                "**/*.json"
-            ],
+            "fileMatch": ["**/*.json"],
             "schema": {
-                "allowTrailingCommas": true
-            }
-        }
+                "allowTrailingCommas": true,
+            },
+        },
     ],
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     // eslint configuration
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     // tsconfig
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[yaml]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "editor.formatOnSave": true,
     "eslint.format.enable": false,
     "eslint.lintTask.enable": true,
     "eslint.codeAction.disableRuleComment": {
         "enable": true,
-        "location": "separateLine"
+        "location": "separateLine",
     },
-    "eslint.probe": [
-        "typescript",
-    ],
-    "eslint.validate": [
-        "typescript",
-    ]
+    "eslint.probe": ["typescript"],
+    "eslint.validate": ["typescript"],
 }

@@ -6,10 +6,8 @@
             "request": "launch",
             // capture output of variables
             "outputCapture": "std",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "type": "node"
-        }
-    ]
+            "skipFiles": ["<node_internals>/**"],
+            "type": "node",
+        },
+    ],
 }

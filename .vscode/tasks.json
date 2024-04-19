@@ -6,16 +6,16 @@
             "type": "shell",
             "command": "pnpm start",
             "group": {
-                "kind": "build"
-            }
+                "kind": "build",
+            },
         },
         {
             "label": "tsc watch",
             "type": "shell",
             "command": "pnpm dev",
             "group": {
-                "kind": "build"
-            }
+                "kind": "build",
+            },
         },
         {
             "label": "tsc compile",
@@ -24,8 +24,8 @@
             "problemMatcher": ["$tsc"],
             "group": {
                 "kind": "build",
-                "isDefault": true
-            }
-        }
-    ]
+                "isDefault": true,
+            },
+        },
+    ],
 }

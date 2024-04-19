@@ -4,8 +4,8 @@
         "module": "ES2022",
         "target": "ES2022",
         "moduleResolution": "bundler",
-        "strict": true
+        "strict": true,
     },
     "include": ["src/**/*"],
-    "exclude": ["node_modules", "**/*.spec.ts"]
+    "exclude": ["node_modules", "**/*.spec.ts"],
 }
